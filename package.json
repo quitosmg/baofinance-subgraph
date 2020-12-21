@@ -1,10 +1,10 @@
 {
-  "name": "baofinance-subgraph",
+  "name": "bao-finance",
   "license": "UNLICENSED",
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ marcosmg/baofinance-subgraph",
+    "deploy": "graph codegen && graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ marcosmg/bao-finance",
     "create-local": "graph create --node http://localhost:8020/ marcosmg/baofinance-subgraph",
     "remove-local": "graph remove --node http://localhost:8020/ marcosmg/baofinance-subgraph",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 marcosmg/baofinance-subgraph"
